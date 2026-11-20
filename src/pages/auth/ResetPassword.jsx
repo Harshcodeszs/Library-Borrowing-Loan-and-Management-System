@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { AlertCircle, ArrowRight, CheckCircle2, KeyRound } from 'lucide-react'
-import { resetPassword } from '../lib/auth'
-import { passwordIssues } from '../lib/validation'
-import Button from '../components/ui/Button'
-import PasswordInput from '../components/ui/PasswordInput'
-import Brand from '../components/layout/Brand'
+import { resetPassword } from '../../lib/auth'
+import { passwordIssues } from '../../lib/validation'
+import Button from '../../components/ui/Button'
+import PasswordInput from '../../components/ui/PasswordInput'
+import Brand from '../../components/layout/Brand'
 
 export default function ResetPassword() {
   const [params] = useSearchParams()

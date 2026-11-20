@@ -13,16 +13,16 @@ import {
   ShieldCheck,
   User,
 } from 'lucide-react'
-import { useAuth, ROLE_HOME } from '../context/AuthContext'
-import { useToast } from '../context/ToastContext'
-import { allAccountEmails, getDB } from '../lib/db'
-import { registerStudent, resendRegistration } from '../lib/auth'
-import { passwordStrength, validateRegistration } from '../lib/validation'
-import { cn } from '../lib/format'
-import Brand from '../components/layout/Brand'
-import Button from '../components/ui/Button'
-import Input from '../components/ui/Input'
-import PasswordInput from '../components/ui/PasswordInput'
+import { useAuth, ROLE_HOME } from '../../context/AuthContext'
+import { useToast } from '../../context/ToastContext'
+import { allAccountEmails, getDB } from '../../lib/db'
+import { registerStudent, resendRegistration } from '../../lib/auth'
+import { passwordStrength, validateRegistration } from '../../lib/validation'
+import { cn } from '../../lib/format'
+import Brand from '../../components/layout/Brand'
+import Button from '../../components/ui/Button'
+import Input from '../../components/ui/Input'
+import PasswordInput from '../../components/ui/PasswordInput'
 
 const initialValues = {
   firstName: '',

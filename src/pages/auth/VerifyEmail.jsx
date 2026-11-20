@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowRight, CheckCircle2, Loader2, MailX, ShieldCheck } from 'lucide-react'
-import { confirmRegistration } from '../lib/auth'
-import { fullName } from '../lib/format'
-import Button from '../components/ui/Button'
+import { confirmRegistration } from '../../lib/auth'
+import { fullName } from '../../lib/format'
+import Button from '../../components/ui/Button'
 
 export default function VerifyEmail() {
   const [params] = useSearchParams()

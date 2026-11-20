@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AlertCircle, ArrowLeft, KeyRound, Mail } from 'lucide-react'
-import { requestPasswordReset } from '../lib/auth'
-import Button from '../components/ui/Button'
-import Input from '../components/ui/Input'
-import Brand from '../components/layout/Brand'
+import { requestPasswordReset } from '../../lib/auth'
+import Button from '../../components/ui/Button'
+import Input from '../../components/ui/Input'
+import Brand from '../../components/layout/Brand'
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState('')

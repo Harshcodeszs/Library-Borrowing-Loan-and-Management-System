@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { AlertCircle, ArrowLeft, KeyRound, LogOut, ShieldCheck } from 'lucide-react'
-import { useAuth } from '../context/AuthContext'
-import { useToast } from '../context/ToastContext'
-import { changePassword } from '../lib/auth'
-import { passwordIssues } from '../lib/validation'
-import Brand from '../components/layout/Brand'
-import Button from '../components/ui/Button'
-import PasswordInput from '../components/ui/PasswordInput'
+import { useAuth } from '../../context/AuthContext'
+import { useToast } from '../../context/ToastContext'
+import { changePassword } from '../../lib/auth'
+import { passwordIssues } from '../../lib/validation'
+import Brand from '../../components/layout/Brand'
+import Button from '../../components/ui/Button'
+import PasswordInput from '../../components/ui/PasswordInput'
 
 export default function ChangePassword() {
   const { user, home, refresh, signOut } = useAuth()

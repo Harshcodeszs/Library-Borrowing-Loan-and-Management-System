@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { AlertCircle, ArrowRight, Mail, Sparkles } from 'lucide-react'
-import { useAuth, ROLE_HOME } from '../context/AuthContext'
-import Brand from '../components/layout/Brand'
-import Button from '../components/ui/Button'
-import Input from '../components/ui/Input'
-import PasswordInput from '../components/ui/PasswordInput'
+import { useAuth, ROLE_HOME } from '../../context/AuthContext'
+import Brand from '../../components/layout/Brand'
+import Button from '../../components/ui/Button'
+import Input from '../../components/ui/Input'
+import PasswordInput from '../../components/ui/PasswordInput'
 
 export default function Login() {
   const { user, signIn } = useAuth()
